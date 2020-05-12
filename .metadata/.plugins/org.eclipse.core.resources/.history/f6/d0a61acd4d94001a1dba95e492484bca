@@ -1,0 +1,6 @@
+package br.com.polimorfismo.interfaces;
+
+public class PadraoFormacao {
+	void calcularMensalidade(double fator)
+
+}

@@ -1,0 +1,10 @@
+package br.com.universidade.modelo;
+
+public class Professor extends Pessoa{
+	// atributos
+	private String apelido;
+	private String materia;
+	
+	// construtores
+	
+}

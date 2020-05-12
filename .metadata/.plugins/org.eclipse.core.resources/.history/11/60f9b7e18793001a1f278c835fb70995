@@ -1,0 +1,14 @@
+package br.com.descanso_heranca.implementacao;
+
+public class TesteGeral {
+
+	public TesteGeral() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

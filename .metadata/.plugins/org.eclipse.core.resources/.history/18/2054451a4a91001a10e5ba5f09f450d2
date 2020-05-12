@@ -1,0 +1,9 @@
+package m_banco;
+
+public class Endereco {
+	private String rua;
+	private short numero;
+	private String complemento;
+	private String bairro;
+	private String cep;
+}

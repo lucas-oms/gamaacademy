@@ -1,0 +1,19 @@
+package br.com.projeto_pilha;
+
+public class Pilha {
+	private int topo;
+	private int vetor[];
+
+	public Pilha() {
+		vetor = new int[10];
+		topo = -1;
+	}
+	
+	public boolean vazio() {
+		return (topo==-1);
+	}
+	
+	public boolean cheio() {
+		return (topo==9);
+	}
+}

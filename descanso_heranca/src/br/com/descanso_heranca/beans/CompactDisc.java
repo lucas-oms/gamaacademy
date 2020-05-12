@@ -1,0 +1,39 @@
+package br.com.descanso_heranca.beans;
+
+public class CompactDisc extends Produto{
+	private String gravadora;
+	private String artista;
+	public CompactDisc(int codigo, double preco, String descricao, String gravadora, String artista) {
+		super(codigo, preco, descricao);
+		this.gravadora = gravadora;
+		this.artista = artista;
+	}
+	public CompactDisc() {
+		super();
+	}
+	// CD tem um imposto de 15%;
+	public double calcularValorFinal() {
+		return getPreco()*1.15;
+	}
+	public void setAll (int codigo, double preco, String descricao, String gravadora, String artista) {
+		super.setAll(codigo, preco, descricao);
+		this.gravadora = gravadora;
+		this.artista = artista;
+	}
+	public String getAll() {
+		return gravadora +"\n"+ artista +"\n"+ super.getAll();
+	}
+	public String getGravadora() {
+		return gravadora;
+	}
+	public void setGravador(String gravadora) {
+		this.gravadora = gravadora;
+	}
+	public String getArtista() {
+		return artista;
+	}
+	public void setArtista(String artista) {
+		this.artista = artista;
+	}
+	
+}

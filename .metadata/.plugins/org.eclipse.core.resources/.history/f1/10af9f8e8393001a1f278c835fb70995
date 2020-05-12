@@ -1,0 +1,5 @@
+package br.com.descanso_heranca.beans;
+
+public class Produto {
+
+}

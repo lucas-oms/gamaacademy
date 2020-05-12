@@ -1,0 +1,22 @@
+package br.com.teste;
+
+import br.com.projeto_pilha.Pilha;
+
+public class Teste {
+	public static void main(String[] args) {
+		Pilha objeto = new Pilha();
+		System.out.println(objeto.vazio());
+		System.out.println(objeto.cheio());
+		
+		objeto.inserir(50);
+		objeto.inserir(51);
+		objeto.inserir(52);
+		objeto.inserir(53);
+		objeto.inserir(54);
+		
+		
+		System.out.println(objeto.vazio());
+		System.out.println(objeto.cheio());
+	}
+
+}

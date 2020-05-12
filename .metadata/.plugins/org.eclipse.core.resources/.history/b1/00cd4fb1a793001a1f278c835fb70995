@@ -1,0 +1,9 @@
+package br.com.polimorfismo;
+
+public class Formacao {
+
+	public Formacao() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

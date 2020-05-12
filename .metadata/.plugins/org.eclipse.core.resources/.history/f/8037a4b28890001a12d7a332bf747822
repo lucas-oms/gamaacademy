@@ -1,0 +1,21 @@
+package teste;
+
+import javax.swing.JOptionPane;
+
+import modelo.Aluno;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		Aluno objeto = new Aluno();
+		objeto.adicionarNome(JOptionPane.showInputDialog("Digite o nome").toUpperCase());
+		objeto.adicionarMatricula(Integer.parseInt(JOptionPane.showInputDialog("Digite o número de matrícula")));
+		objeto.adicionarEmail(JOptionPane.showInputDialog("Digite o e-mail"));
+		System.out.println("O nome é: " + objeto.retornarNome());
+		System.out.println("O número de matrícula é: " + objeto.retornarMatricula());
+		System.out.println("O e-mail é: " + objeto.retornarEmail());
+		System.out.println("Até logo...");
+	}
+
+}

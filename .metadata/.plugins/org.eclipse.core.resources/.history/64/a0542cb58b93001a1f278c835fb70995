@@ -1,0 +1,34 @@
+package br.com.descanso_heranca.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.descanso_heranca.beans.CompactDisc;
+import br.com.descanso_heranca.beans.Livro;
+import br.com.descanso_heranca.beans.Produto;
+
+public class TesteGeral {
+
+	public static void main(String[] args) {
+		Livro livro = new Livro();
+		CompactDisc cd = new CompactDisc();
+		//Impossível instanciar, porque a classe está como abstrata
+		//Produto objeto3 = new Produto();
+		String resposta = JOptionPane.showInputDialog("Digite:\n<L> para livro ou\n<C> para CD").toUpperCase();
+		if (resposta.equals("L")) {
+			livro.setAll(
+					Integer.parseInt(JOptionPane.showInputDialog("Digite o código")),
+					Double.parseDouble(JOptionPane.showInputDialog("Digite o valor")),
+					JOptionPane.showInputDialog("Digite a descrição").toUpperCase(),
+					JOptionPane.showInputDialog("Digite o ISBN").toUpperCase(),
+					JOptionPane.showInputDialog("Digite o autor").toUpperCase()
+					);
+		}
+		
+		Produto produto;
+		
+		produto = new CompactDisc();
+		produto = new Livro();
+
+	}
+
+}

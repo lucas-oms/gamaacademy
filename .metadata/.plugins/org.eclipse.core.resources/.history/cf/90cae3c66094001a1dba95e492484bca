@@ -1,0 +1,24 @@
+package br.com.teste;
+
+import br.com.projeto_pilha.Pilha;
+
+public class Teste {
+	public static void main(String[] args) {
+		
+		Pilha idades = new Pilha();
+		
+		System.out.println("Vazio? " + idades.vazio());
+		System.out.println("Cheio? " + idades.cheio());
+		
+		idades.inserir(18);
+		idades.inserir(25);
+		idades.inserir(44);
+		
+		
+		System.out.println(idades.retirar());
+		System.out.println(idades.retirar());
+		System.out.println(idades.retirar());
+		System.out.println(idades.retirar());
+	}
+
+}

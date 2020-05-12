@@ -1,0 +1,24 @@
+package collection_framework;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class TesteLista {
+
+	public static void main(String[] args) {
+		// não é possível instanciar
+		//List lista = new List();
+		
+		//é possível, mas não recomendado instanciar pela
+		//ArrayList lista = new ArrayList();
+		
+		// <> generics => significa que vc vai especificar um tipo de dado genérico
+
+		List<String> lista = new ArrayList<>();
+		lista.add("DBA");
+		lista.add("ANALISTA");
+		lista.add("DEV");
+		System.out.println(lista.get(1));
+	}
+
+}

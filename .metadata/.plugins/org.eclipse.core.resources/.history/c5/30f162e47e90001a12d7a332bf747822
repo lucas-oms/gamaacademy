@@ -1,0 +1,15 @@
+package modelo;
+//public => acesso total(+)
+//private => restrição máxima (-)
+//package => acesso somente se estiver no mesmo diretório (~)
+
+public class Aluno {
+	private String nome;
+	private int numeroMatricula;
+	private String email;
+
+
+
+
+
+}

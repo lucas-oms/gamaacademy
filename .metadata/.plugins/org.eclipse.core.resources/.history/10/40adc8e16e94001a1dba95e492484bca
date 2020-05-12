@@ -1,0 +1,21 @@
+package collection_framework;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class TesteLista {
+
+	public static void main(String[] args) {
+		// não é possível instanciar
+		//List lista = new List();
+		
+		//é possível, mas não recomendado instanciar pela
+		//ArrayList lista = new ArrayList();
+
+		List lista = new ArrayList();
+		lista.add(10);
+		lista.add("Xpto");
+		lista.add(true);
+	}
+
+}

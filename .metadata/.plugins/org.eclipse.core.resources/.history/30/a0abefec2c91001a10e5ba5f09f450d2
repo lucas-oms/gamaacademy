@@ -1,0 +1,31 @@
+package teste;
+
+import javax.swing.JOptionPane;
+
+import modelo.Aluno;
+import modelo.Endereco;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		Aluno objeto = new Aluno();
+		//objeto.setNome(JOptionPane.showInputDialog("Digite o nome").toUpperCase());
+		//objeto.setNumeroMatricula(Integer.parseInt(JOptionPane.showInputDialog("Digite o número de matrícula")));
+		//objeto.setEmail(JOptionPane.showInputDialog("Digite o e-mail"));
+		
+		Endereco objetoEndereco = new Endereco();
+		objetoEndereco.setAll("RUA XPTO", "53A", "NARNIA", "OZ", "SP", "12345-123");
+		objetoEndereco.setLougradouro("lfscasa");
+		objetoEndereco.setUf("1234");
+		
+		objeto.setAll("LUCAS", 2611, "lucas@gmail.com", objetoEndereco);
+		System.out.println(objeto.getAll());
+		
+		//System.out.println("O nome é: " + objeto.getNome());
+		//System.out.println("O número de matrícula é: " + objeto.getNumeroMatricula());
+		//System.out.println("O e-mail é: " + objeto.getEmail());
+		//System.out.println("Até logo...");
+	}
+
+}

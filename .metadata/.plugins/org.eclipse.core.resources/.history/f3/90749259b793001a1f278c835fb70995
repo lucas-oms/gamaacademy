@@ -1,0 +1,18 @@
+package br.com.polimorfismo.implantacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.polimorfismo.Formacao;
+
+public class TesteFormacao {
+	public static String texto(String msg) {
+		return JOptionPane.showInputDialog(msg).toUpperCase();
+	}
+
+	public static void main(String[] args) {
+		Formacao formacao=null;
+		String resposta = texto("Digite:\n<B> para Bacharelado\n<M> para Medio\n<T> para Tecnologo");
+		System.out.println(resposta);
+	}
+
+}

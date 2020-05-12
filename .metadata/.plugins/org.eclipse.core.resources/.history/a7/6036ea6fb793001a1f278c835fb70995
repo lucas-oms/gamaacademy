@@ -1,0 +1,33 @@
+package br.com.polimorfismo.implantacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.polimorfismo.Bacharelado;
+import br.com.polimorfismo.Formacao;
+
+public class TesteFormacao {
+	public static String texto(String msg) {
+		return JOptionPane.showInputDialog(msg).toUpperCase();
+	}
+
+	public static void main(String[] args) {
+		Formacao formacao=null;
+		String resposta = texto("Digite:\n<B> para Bacharelado\n<M> para Medio\n<T> para Tecnologo");
+		if (resposta.equals("B")) {
+			formacao = new Bacharelado(
+					texto("Digite o nome do curso"),
+					Integer.parseInt(texto("Digite o perído")),
+					formacao.calcularMensalidade(double fator),
+					formacao.definirDuracao(),
+					String projetoConclusao,
+					int cargaHorariaEstagio
+					);
+		}else if (resposta.equals("M")) {
+			
+		}else if (resposta.equals("T")) {
+			
+		}
+		System.out.println(resposta);
+	}
+
+}
